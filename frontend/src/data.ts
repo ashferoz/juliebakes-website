@@ -33,7 +33,7 @@ export const sampleProducts: Product[] = [
   },
   {
     name: 'Vanilla Cake',
-    slug: 'vanilla-cake',
+    slug: 'vanilla-cake-2',
     image: '../images/p3.jpg',
     category: 'cake',
     price: 21,
@@ -43,7 +43,7 @@ export const sampleProducts: Product[] = [
   },
   {
     name: 'Vanilla Cake',
-    slug: 'vanilla-cake',
+    slug: 'vanilla-cake-3',
     image: '../images/p3.jpg',
     category: 'cake',
     price: 21,

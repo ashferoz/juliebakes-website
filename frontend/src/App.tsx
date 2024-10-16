@@ -1,5 +1,5 @@
 import { ShoppingCartIcon } from 'lucide-react'
-import { sampleProducts } from './data'
+import { Outlet } from 'react-router-dom'
 
 function App() {
   return (
@@ -36,7 +36,7 @@ function App() {
           <div className="">
             <a
               href="/cart"
-              className="bg-[#ff8686] flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-[#ff9d9d]"
+              className="bg-[#A03221] text-white flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-[#ad3f2e]"
             >
               <span>Cart (0)</span>
               <ShoppingCartIcon />
@@ -45,16 +45,8 @@ function App() {
         </nav>
       </header>
       <main className="flex flex-col h-min-screen mx-12 my-10">
-        <div className="">
-          <ul className="grid lg:grid-cols-4 md:grid-cols-3 gap-5">
-            {sampleProducts.map((product) => (
-              <li key={product.slug} className="flex flex-col items-center">
-                <img src={product.image} alt={product.name} className="" />
-                <h4>{product.name}</h4>
-                <p>${product.price}</p>
-              </li>
-            ))}
-          </ul>
+        <div>
+          <Outlet />
         </div>
       </main>
       <footer>
